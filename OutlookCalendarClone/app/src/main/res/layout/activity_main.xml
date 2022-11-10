@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bluelite">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/peviousmonth"
+                android:layout_width="78dp"
+                android:layout_height="53dp"
+                android:elevation="4dp"
+                android:text="<-"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/monthYearTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.666"
+                tools:ignore="UsingOnClickInXml">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/monthYearTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="November"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.451"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:layout_width="78dp"
+                android:id="@+id/month_navigation_next"
+                android:layout_height="50dp"
+                android:text="->"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/monthYearTV"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="23dp"
+                android:src="@drawable/ic_baseline_search_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_month"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.951"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/bluelite">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="S"
+                android:textColor="@color/white">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="M"
+                android:textColor="@color/white">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="T"
+                android:textColor="@color/white">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="W"
+                android:textColor="@color/white">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="T"
+                android:textColor="@color/white">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="F"
+                android:textColor="@color/white">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="S"
+                android:textColor="@color/white">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendarRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_email_24">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_search_gray">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_calendar_month_24">
+
+                </ImageView>
+
+
+            </LinearLayout>
+        </Toolbar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addschedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/bluelite"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
